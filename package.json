@@ -10,7 +10,7 @@
     "coveralls": "./node_modules/coveralls/bin/coveralls.js"
   },
   "scripts": {
-    "test": "grunt build; mocha test --recursive -R spec",
+    "test": "mocha test --recursive -R spec",
     "coveralls": "mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls"
   },
   "config": {
