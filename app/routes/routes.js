@@ -1,9 +1,9 @@
 'use strict';
 
-var morgan = require('morgan');
-var bodyParser = require('body-parser');
-var methodOverride = require('express-method-override');
-var home = require('../controllers/home');
+var morgan         = require('morgan'),
+    bodyParser     = require('body-parser'),
+    methodOverride = require('express-method-override'),
+    home           = require('../controllers/home');
 
 module.exports = function(app, express){
   app.use(morgan('dev'));

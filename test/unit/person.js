@@ -3,11 +3,11 @@
 
 'use strict';
 
-var expect    = require('chai').expect;
-var Person    = require('../../app/models/person');
-var dbConnect = require('../../app/lib/mongodb');
-var cp        = require('child_process');
-var db        = 'template-test';
+var expect    = require('chai').expect,
+    Person    = require('../../app/models/person'),
+    dbConnect = require('../../app/lib/mongodb'),
+    cp        = require('child_process'),
+    db        = 'template-test';
 
 describe('Person', function(){
   before(function(done){
@@ -18,7 +18,6 @@ describe('Person', function(){
 
   beforeEach(function(done){
     cp.execFile(__dirname + '/../scripts/clean-db.sh', [db], {cwd:__dirname + '/../scripts'}, function(err, stdout, stderr){
-      console.log(err, stdout, stderr);
       done();
     });
   });

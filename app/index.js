@@ -1,10 +1,9 @@
 'use strict';
 
-var port = process.env.PORT;
-var db   = process.env.DB;
-
-var express = require('express');
-var app = express();
+var port    = process.env.PORT,
+    db      = process.env.DB,
+    express = require('express'),
+    app     = express();
 
 require('./lib/config')(app);
 require('./lib/mongodb')(db);
