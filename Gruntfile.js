@@ -17,7 +17,7 @@ module.exports = function(grunt){
     },
     // ---------------------------------------------------------------------- //
     jscs: {
-    src: '<%= jshint.all %>',
+      src: '<%= jshint.all %>',
       options: {
         config: '.jscsrc',
         reporter: 'console'
