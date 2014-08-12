@@ -11,6 +11,8 @@
   },
   "scripts": {
     "test": "mocha test --recursive -R spec",
+    "watch": "mocha test --recursive -R spec --watch",
+    "syntax": "./node_modules/grunt-cli/bin/grunt build",
     "coveralls": "mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls"
   },
   "config": {

@@ -6,6 +6,9 @@ services:
   - redis-server
 notifications:
   email: false
+script:
+  - npm run syntax
+  - npm test
 after_script:
   - npm run coveralls
 

@@ -26,6 +26,7 @@ npm install blanket --save-dev
 npm install chai --save-dev
 npm install coveralls --save-dev
 npm install grunt --save-dev
+npm install grunt-cli --save-dev
 npm install grunt-contrib-jshint --save-dev
 npm install grunt-contrib-watch --save-dev
 npm install jshint-stylish --save-dev
