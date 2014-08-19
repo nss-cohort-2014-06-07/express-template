@@ -1,20 +1,23 @@
 doctype html
-html
+html(lang='en')
   head
     meta(charset='utf-8')
-    title Node/Express.js Template
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Express.js Template
+    link(href='/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     link(rel='stylesheet', href='/css/style.css')
   body
-    h1 Node/Express.js Template
-    nav
-      ul
-        li: a(href='/') Home
-
-    block content
+    include nav
+    .container
+      .row
+        .col-xs-12
+          block content
 
     script(src='/js/vendor/jquery-2.1.1.min.js')
     script(src='/js/vendor/lodash.min.js')
     script(src='/js/vendor/moment.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
     script(src='/js/user/main.js')
 
     block scripts
