@@ -22,6 +22,7 @@ npm install moment --save
 npm install mongodb --save
 npm install morgan --save
 npm install less-middleware --save
+npm install multiparty --save
 
 npm install blanket --save-dev
 npm install chai --save-dev
