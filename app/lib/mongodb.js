@@ -7,7 +7,7 @@ module.exports = function(name, cb){
   MongoClient.connect(url, function(err, db){
     global.mongodb = db;
 
-    console.log('MongoDB Ready:', name);
+    console.log('Express: Database', name);
     if(cb){cb();}
   });
 };

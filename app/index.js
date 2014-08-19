@@ -10,6 +10,6 @@ require('./lib/mongodb')(db);
 require('./routes/routes')(app, express);
 
 app.listen(port, function(){
-  console.log('Express Ready:', port);
+  console.log('Express: Port', port);
 });
 

@@ -15,6 +15,6 @@ module.exports = function(app, express){
 
   app.get('/', home.index);
 
-  console.log('Routes Loaded');
+  console.log('Express: Routes Loaded');
 };
 
