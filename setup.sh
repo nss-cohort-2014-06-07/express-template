@@ -25,6 +25,8 @@ npm install less-middleware --save
 npm install multiparty --save
 npm install express-session --save
 npm install connect-redis --save
+npm install bcrypt --save
+npm install chalk --save
 
 npm install blanket --save-dev
 npm install chai --save-dev
