@@ -39,6 +39,7 @@ npm install jshint-stylish --save-dev
 npm install mocha --save-dev
 npm install mocha-lcov-reporter --save-dev
 npm install grunt-jscs --save-dev
+npm install supertest --save-dev
 
 npm test
 

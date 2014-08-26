@@ -6,10 +6,11 @@ var port    = process.env.PORT,
     app     = express();
 
 require('./lib/config')(app);
-require('./lib/mongodb')(db);
 require('./routes/routes')(app, express);
 
-app.listen(port, function(){
-  console.log('Express: Port', port);
+require('./lib/mongodb')(db, function(){
+  app.listen(port);
 });
+
+module.exports = app;
 
