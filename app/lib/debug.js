@@ -3,7 +3,9 @@
 var chalk = require('chalk');
 
 exports.info = function(req, res, next){
-  if(process.env.DEBUG){
+  var debug = process.env.DEBUG * 1;
+
+  if(debug){
     console.log(chalk.bgRed('--------------------------------------------------------------------------------'));
     console.log(chalk.bold.red('TIME   :'), chalk.bold.blue(new Date()));
     console.log(chalk.bold.red('PORT   :'), process.env.PORT);
@@ -16,10 +18,14 @@ exports.info = function(req, res, next){
     console.log(chalk.bold.green('LOCALS :'), res.locals);
     console.log(chalk.bold.green('SESSION:'), req.session);
     console.log(chalk.bold.red('SESSID :'), req.sessionID);
-    console.log(chalk.bgBlue('--------------------------------------------------------------------------------'));
-    console.log(chalk.bold.red('HEADERS:'), req.headers);
-    console.log(chalk.bgBlue('--------------------------------------------------------------------------------'));
-    console.log(chalk.bold.red('ENV    :'), process.env);
+
+    if(debug === 2){
+      console.log(chalk.bgBlue('--------------------------------------------------------------------------------'));
+      console.log(chalk.bold.red('HEADERS:'), req.headers);
+      console.log(chalk.bgBlue('--------------------------------------------------------------------------------'));
+      console.log(chalk.bold.red('ENV    :'), process.env);
+    }
+
     console.log(chalk.bgRed('--------------------------------------------------------------------------------'));
   }
 
