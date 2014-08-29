@@ -17,7 +17,7 @@ npm install body-parser --save
 npm install express --save
 npm install express-method-override --save
 npm install jade --save
-npm install lodash --save
+npm install underscore-contrib --save
 npm install moment --save
 npm install mongodb --save
 npm install morgan --save
@@ -27,6 +27,7 @@ npm install express-session --save
 npm install connect-redis --save
 npm install bcrypt --save
 npm install chalk --save
+npm install request --save
 
 npm install blanket --save-dev
 npm install chai --save-dev
