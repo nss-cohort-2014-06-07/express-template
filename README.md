@@ -7,24 +7,16 @@ coverage status icon
 ![Image1](https://raw.githubusercontent.com/nss-cohort-2014-06-07/express-template/master/docs/screenshots/one.jpg)
 ![Image2](https://raw.githubusercontent.com/nss-cohort-2014-06-07/express-template/master/docs/screenshots/two.jpg)
 
-### About
+### Description
 write a description about your project
 
 ### Models
 ```
 Model 1
-prop-a
-prop-b
-.classMethod-c
-#instanceMethod-d
 ```
 
 ```
 Model 2
-prop-e
-prop-f
-.classMethod-g
-#instanceMethod-h
 ```
 
 ### Features
