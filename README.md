@@ -19,10 +19,19 @@ Model 1
 Model 2
 ```
 
+### Database
+```
+Collecion 1
+```
+
+```
+Collection 2
+```
+
 ### Features
-- feature 1
-- feature 2
-- feature 3
+- [x] Feature 1
+- [ ] Feature 2
+- [x] Feature 3
 
 ### Running Tests
 ```bash
