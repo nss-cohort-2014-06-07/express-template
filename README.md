@@ -3,6 +3,10 @@
 build status icon
 coverage status icon
 
+### Screenshots
+![Image1](https://raw.githubusercontent.com/nss-cohort-2014-06-07/express-template/master/docs/screenshots/one.jpg)
+![Image2](https://raw.githubusercontent.com/nss-cohort-2014-06-07/express-template/master/docs/screenshots/two.jpg)
+
 ### About
 write a description about your project
 
