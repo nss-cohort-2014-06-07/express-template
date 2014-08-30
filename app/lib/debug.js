@@ -15,6 +15,7 @@ exports.info = function(req, res, next){
     console.log(chalk.bold.green('PARAMS :'), req.params);
     console.log(chalk.bold.green('QUERY  :'), req.query);
     console.log(chalk.bold.green('BODY   :'), req.body);
+    console.log(chalk.bold.green('USER   :'), req.user);
     console.log(chalk.bold.green('LOCALS :'), res.locals);
     console.log(chalk.bold.green('SESSION:'), req.session);
     console.log(chalk.bold.red('SESSID :'), req.sessionID);
